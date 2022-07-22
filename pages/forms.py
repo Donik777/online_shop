@@ -1,9 +1,7 @@
 from django import forms
-from .models import CommentModel
+from .models import ContactModel
 
-
-class CommentModelForm(forms.ModelForm):
-
+class ContactModelForm(forms.ModelForm):
     class Meta:
-        model = CommentModel
-        exclude = ['post', 'created_at']
+        model = ContactModel
+        exclude = ['created_at']
